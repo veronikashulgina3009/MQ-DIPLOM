@@ -266,7 +266,7 @@
   }
   
   .content {
-    width: 367px;
+    max-width: 367px;
     margin-left: 30px;
   }
   
@@ -413,7 +413,7 @@
     box-sizing: border-box;
     border: none;
     min-height: 48px;
-    width: 223px;
+    width: 222px;
     background-color: #f4f7f6;
     font-size: 13px;
     font-family: "OpenSans-Regular";
@@ -878,6 +878,8 @@
     height: 20px;
     cursor: pointer;
   }
+
+ 
   
   @media (min-width: 1200px) {
     .menu-list {
@@ -901,8 +903,8 @@
       min-height: 320px;
     }
   
-    .card-trend:nth-child(-n + 3) {
-      margin-right: 3px;
+    .card-trend: {
+      margin-right: 0.4%;
     }
   
     .basic-information {
@@ -921,12 +923,12 @@
   }
   
   @media (min-width: 641px) and (max-width: 1199px) {
+    .logo-img {
+      margin-left: 35px;
+    }
+
     .menu-list {
       margin-right: 35px;
-      }
-  
-    .logo-img {
-    margin-left: 35px;
       }
 
     .two {
@@ -939,30 +941,25 @@
     }
   
     .card-trend:nth-child(odd) {
-      margin-right: 3px;
+      margin-right: 1%;
     }
   
     .card-trend {
-      width: 49.7%;
-      margin-bottom: 3px;
+      width: 49%;
+      margin-bottom: 1%;
     }
   
     .me-nu {
       justify-content: space-between;
     }
-  
-    .logo {
-      margin-left: 35px;
-    }
 
-    
     .menu-list {
       display: none;
     }
   
     .product-container {
       flex-wrap: wrap;
-      max-width: 768px;
+      max-width: 700px;
     }
   
     .product {
@@ -980,7 +977,7 @@
   
     .basic-information {
       justify-content: space-between;
-      max-width: 768px;
+      max-width: 700px;
     }
   
     .main {
@@ -997,21 +994,22 @@
       border-color: #eeeeee;
       padding-bottom: 17px;
     }
-  
+   
     .aside {
       width: 40%;
+      margin-left: 10%;
     }
   
     .icons {
-      max-width: 768px;
+      max-width: 700px;
     }
   }
   
   @media (max-width: 640px) and (orientation: landscape) {
   
     .card-trend  {
-      width: 49.7%;
-      margin-bottom: 3px;
+      width: 49%;
+      margin-bottom: 1%;
     }
   }
   
@@ -1023,6 +1021,7 @@
 
     .slogan {
       font-size: 26px;
+      max-width: 270px;
     }
 
     .header {
@@ -1036,22 +1035,20 @@
     .header-menu-nav {
       align-self: flex-end;
     }
+
+    .menu-button {
+      margin-top: 30px;
+      margin-right: 15px;
+    }
   
     .menu-list {
       display: none;
     }
   
-    .logo {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 90px;
-    }
-  
     .logo-img {
       margin-left: 45px;
-      min-width: 270px;
-      height: 50px;
+      display: block;
+      margin-top: 90px;
     }
   
     .card-trend  {
@@ -1089,7 +1086,7 @@
     }
   
     .aside {
-      max-width: 330px;
+      max-width: 90%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -1103,7 +1100,7 @@
     }
   
     .product {
-      width: 100%;
+      width: 90%;
       display: flex;
       margin-left: 5%;
       margin-top: 30px;
